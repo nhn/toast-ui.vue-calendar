@@ -53,6 +53,17 @@ When you load `toastui-vue-calendar.js` using CDN, you should insert dependency 
 <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
 ```
 
+If you use default creation popup, you should insert `jquery`, `tui.time-picher`, `tui.date-picker` before `tui-code-snippet`.
+
+```html
+<script
+src="https://code.jquery.com/jquery-1.12.4.min.js"
+integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+crossorigin="anonymous"></script>
+<script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.js"></script>
+<script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.js"></script>
+```
+
 ## 📅 Usage
 
 ### Load

@@ -13,7 +13,6 @@
 * [Collect statistics on the use of open source](#collect-statistics-on-the-use-of-open-source)
 * [Install](#-install)
     * [Using npm](#using-npm)
-    * [Via Contents Delivery Network (CDN)](#via-contents-delivery-network-cdn)
 * [Usage](#-usage)
     * [Load](#load)
     * [Implement](#implement)
@@ -38,30 +37,6 @@ tui.usageStatistics = false;
 
 ```sh
 npm install --save @toast-ui/vue-calendar
-```
-
-### Via Contents Delivery Network (CDN)
-
-TOAST UI products are available over the CDN powered by [TOAST Cloud](https://www.toast.com).
-When you load `toastui-vue-calendar.js` using CDN, you should insert dependency modules `vue`, `tui-code-snippet`, `tui-calendar` and `tui-calendar.css` in the html.
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.js"></script>
-<script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
-<script src="https://uicdn.toast.com/toast-ui.vue-calendar/latest/toastui-vue-calendar.js"></script>
-<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
-```
-
-If you use default creation popup, you should insert `jquery`, `tui.time-picher`, `tui.date-picker` before `tui-code-snippet`.
-
-```html
-<script
-src="https://code.jquery.com/jquery-1.12.4.min.js"
-integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-crossorigin="anonymous"></script>
-<script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.js"></script>
-<script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.js"></script>
 ```
 
 ## 📅 Usage

@@ -136,7 +136,7 @@ export default {
                     dueDateClass: '',
                     start: today.toISOString(),
                     end: getDate('hours', today, 1, '+').toISOString()
-                },
+                }
             ],
             timezones: [{
                 timezoneOffset: 540,

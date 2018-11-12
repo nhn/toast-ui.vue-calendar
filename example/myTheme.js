@@ -60,7 +60,7 @@ export default {
     // week daygrid 'daygrid'
     'week.daygrid.borderRight': '1px solid #ddd',
 
-    'week.daygridLeft.width': '77px',
+    'week.daygridLeft.width': '100px',
     'week.daygridLeft.backgroundColor': '',
     'week.daygridLeft.paddingRight': '5px',
     'week.daygridLeft.borderRight': '1px solid #ddd',

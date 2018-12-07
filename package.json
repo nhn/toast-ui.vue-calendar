@@ -11,7 +11,8 @@
     "lint": "eslint src/**",
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
-    "serve": "vue serve ./example/App.vue"
+    "serve": "vue serve ./example/App.vue",
+    "note": "tuie --tag=$(git describe --tags)"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "vue": "^2.5.17",
     "vue-loader": "^15.4.1",
     "vue-template-compiler": "^2.5.17",
+    "tui-release-notes": "git+https://github.com/nhnent/tui.release-notes.git",
     "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0"
   },

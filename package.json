@@ -1,6 +1,6 @@
 {
   "name": "@toast-ui/vue-calendar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TOAST UI Calendar for Vue",
   "main": "dist/toastui-vue-calendar.js",
   "files": [
@@ -41,6 +41,6 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
-    "tui-calendar": "^1.7.0"
+    "tui-calendar": "^1.9.0"
   }
 }

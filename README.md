@@ -129,7 +129,7 @@ We provide props for [Options of Toast UI Calendar](https://nhn.github.io/tui.ca
 | template | Object | {} | X | Customize renderer. For more information about template, see [Template of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/global.html#Template). |
 | useCreationPopup | Boolean | true | X | Whether use default creation popup or not. |
 | useDetailPopup | Boolean | true | X | Whether use default detail popup or not. |
-| usageStatistics | Boolean | false | X | Whether send hostnames to Google Analytics or not. |
+| usageStatistics | Boolean | true | X | Whether send hostnames to Google Analytics or not. |
 
 #### Example
 

@@ -46,21 +46,15 @@ export default {
     },
     view: {
       type: String,
-      default() {
-        return 'week';
-      }
+      default: 'week'
     },
     taskView: {
       type: [Boolean, Array],
-      default() {
-        return true;
-      }
+      default: true
     },
     scheduleView: {
       type: [Boolean, Array],
-      default() {
-        return true;
-      }
+      default: true
     },
     theme: {
       type: Object,
@@ -88,15 +82,11 @@ export default {
     },
     useCreationPopup: {
       type: Boolean,
-      default() {
-        return true;
-      }
+      default: true
     },
     useDetailPopup: {
       type: Boolean,
-      default() {
-        return true;
-      }
+      default: true
     },
     timezones: {
       type: Array,
@@ -106,15 +96,19 @@ export default {
     },
     disableDblClick: {
       type: Boolean,
-      default() {
-        return false;
-      }
+      default: false
+    },
+    disableClick: {
+      type: Boolean,
+      default: false
     },
     isReadOnly: {
       type: Boolean,
-      default() {
-        return false;
-      }
+      default: false
+    },
+    usageStatistics: {
+      type: Boolean,
+      default: true
     }
   },
   watch: {
@@ -160,6 +154,9 @@ export default {
     disableDblClick(newValue) {
       this.calendarInstance.setOptions({disableDblClick: newValue});
     },
+    disableClick(newValue) {
+      this.calendarInstance.setOptions({disableClick: newValue});
+    },
     isReadOnly(newValue) {
       this.calendarInstance.setOptions({isReadOnly: newValue});
     }
@@ -183,7 +180,9 @@ export default {
       useDetailPopup: this.useDetailPopup,
       timezones: this.timezones,
       disableDblClick: this.disableDblClick,
-      isReadOnly: this.isReadOnly
+      disableClick: this.disableClick,
+      isReadOnly: this.isReadOnly,
+      usageStatistics: this.usageStatistics
     });
     this.addEventListeners();
     this.reflectSchedules();

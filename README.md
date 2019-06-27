@@ -43,7 +43,7 @@ npm install --save @toast-ui/vue-calendar
 
 ### Load
 
-You can use Toast UI Calendar for Vue as moudule format or namespace. Also you can use Single File Component (SFC of Vue). When using module format and SFC, you should load `tui-calendar.css` in the script. 
+You can use Toast UI Calendar for Vue as moudule format or namespace. Also you can use Single File Component (SFC of Vue). When using module format and SFC, you should load `tui-calendar.css` in the script.
 
 * Using Ecmascript module
 
@@ -124,10 +124,12 @@ We provide props for [Options of Toast UI Calendar](https://nhn.github.io/tui.ca
 | month | Object | {} | O | Set more for the `month` view. For more infomation about month, see [MonthOptions of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/global.html#MonthOptions). |
 | timezones | Array | [] | O | Set multiple time zones. For more information about timezones, see [Timezone of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/global.html#Timezone). |
 | disableDblClick | Boolean | false | O | Disable double click to create a schedule. |
+| disableClick | Boolean | false | O | Whether to use mouse click events as defaults to create schedules. |
 | isReadOnly | Boolean | false | O | Set read only mode. If `true`, a user can't create and modify any schedule. |
 | template | Object | {} | X | Customize renderer. For more information about template, see [Template of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/global.html#Template). |
 | useCreationPopup | Boolean | true | X | Whether use default creation popup or not. |
 | useDetailPopup | Boolean | true | X | Whether use default detail popup or not. |
+| usageStatistics | Boolean | false | X | Whether send hostnames to Google Analytics or not. |
 
 #### Example
 

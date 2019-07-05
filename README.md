@@ -110,7 +110,7 @@ You can use Toast UI Calendar for Vue as moudule format or namespace. Also you c
 
 ### Props
 
-We provide props for [Options of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/global.html#Options). Each name of props is same options of Toast UI Calendar except `view` is for `defaultView` of option. Additionally you can set schedules using `schedules` of prop.
+We provide props for [Options of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/Options). Each name of props is same options of Toast UI Calendar except `view` is for `defaultView` of option. Additionally you can set schedules using `schedules` of prop.
 
 | Name | Type | Default | Reactive | Description |
 | --- | --- | --- | --- | --- |
@@ -119,14 +119,14 @@ We provide props for [Options of Toast UI Calendar](https://nhn.github.io/tui.ca
 | view | String | 'week' | O | View of calendar. There are three views, `day`, `week` and `month`. |
 | taskView | Boolean, Array | true | O | Show the milestone and task in weekly, daily view. If set `true`, the milestone and task show. If you want to show only the milestone or task, set array like this: `['mileston']` or `['task']`. |
 | scheduleView | Boolean, Array | true | O | Show the all day and time grid in weekly, daily view. If set `true`, the all day and time show. If you want to show only the all day or time, set array like this: `['allday']` or `['time']`.|
-| theme | Object | {} | O | Customize theme. For more infomation about theme, see [ThemeConfig of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/global.html#themeConfig). |
-| week | Object | {} | O | Set more for the `week` and `day` view. For more infomation about week, see [WeekOptions of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/global.html#WeekOptions). |
-| month | Object | {} | O | Set more for the `month` view. For more infomation about month, see [MonthOptions of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/global.html#MonthOptions). |
-| timezones | Array | [] | O | Set multiple time zones. For more information about timezones, see [Timezone of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/global.html#Timezone). |
+| theme | Object | {} | O | Customize theme. For more infomation about theme, see [ThemeConfig of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/themeConfig). |
+| week | Object | {} | O | Set more for the `week` and `day` view. For more infomation about week, see [WeekOptions of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/WeekOptions). |
+| month | Object | {} | O | Set more for the `month` view. For more infomation about month, see [MonthOptions of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/MonthOptions). |
+| timezones | Array | [] | O | Set multiple time zones. For more information about timezones, see [Timezone of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/Timezone). |
 | disableDblClick | Boolean | false | O | Disable double click to create a schedule. |
 | disableClick | Boolean | false | O | Whether to use mouse click events as defaults to create schedules. |
 | isReadOnly | Boolean | false | O | Set read only mode. If `true`, a user can't create and modify any schedule. |
-| template | Object | {} | X | Customize renderer. For more information about template, see [Template of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/global.html#Template). |
+| template | Object | {} | X | Customize renderer. For more information about template, see [Template of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/Template). |
 | useCreationPopup | Boolean | true | X | Whether use default creation popup or not. |
 | useDetailPopup | Boolean | true | X | Whether use default detail popup or not. |
 | usageStatistics | Boolean | true | X | Whether send hostnames to Google Analytics or not. |
@@ -250,7 +250,7 @@ export default {
 * clickSchedule : Occurs when click a schedule.
 * clickTimezonesCollapseBtn : Occurs when click timezones collapse button. This event works when `timezone` prop has multi timezones and `week` prop has `{ showTimezoneCollapseButton: true }`.
 
-For more information such as the parameters of each event, see [Event of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/Calendar.html).
+For more information such as the parameters of each event, see [Event of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/Calendar#event-afterRenderSchedule).
 
 #### Example
 

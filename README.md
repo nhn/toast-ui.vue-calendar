@@ -47,25 +47,38 @@ You can use Toast UI Calendar for Vue as moudule format or namespace. Also you c
 
 * Using Ecmascript module
 
-    ```js
-    import 'tui-calendar/dist/tui-calendar.css'
-    import { Calendar } from '@toast-ui/vue-calendar'
-    ```
+   ```js
+   import { Calendar } from '@toast-ui/vue-calendar';
+   import 'tui-calendar/dist/tui-calendar.css';
+
+   // If you use the default popups, use this.
+   import 'tui-date-picker/dist/tui-date-picker.css';
+   import 'tui-time-picker/dist/tui-time-picker.css';
+   ```
 
 * Using Commonjs module
 
-    ```js
-    require('tui-calendar/dist/tui-calendar.css');
-    var toastui = require('@toast-ui/vue-calendar');
-    var Calendar = toastui.Calendar;
-    ```
+   ```js
+   require('tui-calendar/dist/tui-calendar.css');
+
+   // If you use the default popups, use this.
+   require('tui-date-picker/dist/tui-date-picker.css');
+   require('tui-time-picker/dist/tui-time-picker.css');
+
+   var toastui = require('@toast-ui/vue-calendar');
+   var Calendar = toastui.Calendar;
+   ```
 
 * Using Single File Component
 
-    ```js
-    import 'tui-calendar/dist/tui-calendar.css'
-    import Calendar from '@toast-ui/vue-calendar/src/Calendar.vue'
-    ```
+   ```js
+   import 'tui-calendar/dist/tui-calendar.css'
+   import Calendar from '@toast-ui/vue-calendar/src/Calendar.vue'
+
+   // If you use the default popups, use this.
+   import 'tui-date-picker/dist/tui-date-picker.css';
+   import 'tui-time-picker/dist/tui-time-picker.css';
+   ```
 
 * Using namespace
 

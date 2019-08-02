@@ -206,9 +206,9 @@ export default {
                     end: '2018-10-19T17:31:00+09:00'
                 }
             ],
-            view: 'day'
-            taskView: false
-            scheduleView: ['time']
+            view: 'day',
+            taskView: false,
+            scheduleView: ['time'],
             theme: {
                 'month.dayname.height': '30px',
                 'month.dayname.borderLeft': '1px solid #ff0000',

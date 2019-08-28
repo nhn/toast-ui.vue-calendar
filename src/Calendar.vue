@@ -5,16 +5,6 @@
 <script>
 import Calendar from 'tui-calendar';
 
-const calendarEvents = [
-  'afterRenderSchedule',
-  'beforeCreateSchedule',
-  'beforeDeleteSchedule',
-  'beforeUpdateSchedule',
-  'clickDayname',
-  'clickSchedule',
-  'clickTimezonesCollapseBtn'
-];
-
 const scheduleNeedProp = [
   'start',
   'category'
@@ -161,11 +151,6 @@ export default {
       this.calendarInstance.setOptions({isReadOnly: newValue});
     }
   },
-  data() {
-    return {
-      calendarInstance: null
-    };
-  },
   mounted() {
     this.calendarInstance = new Calendar(this.$refs.tuiCalendar, {
       defaultView: this.view,
@@ -187,8 +172,8 @@ export default {
     this.addEventListeners();
     this.reflectSchedules();
   },
-  destroyed() {
-    calendarEvents.forEach(event => this.calendarInstance.off(event));
+  beforeDestroy() {
+    this.calendarInstance.off();
     this.calendarInstance.destroy();
   },
   methods: {
@@ -196,9 +181,9 @@ export default {
       return JSON.parse(JSON.stringify(data));
     },
     addEventListeners() {
-      calendarEvents.forEach(event => {
-        this.calendarInstance.on(event, (...args) => this.$emit(event, ...args));
-      });
+      for (const eventName of Object.keys(this.$listeners)) {
+        this.calendarInstance.on(eventName, (...args) => this.$emit(eventName, ...args));
+      };
     },
     reflectSchedules() {
       if (this.schedules.length > 0) {

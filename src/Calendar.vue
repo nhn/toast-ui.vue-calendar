@@ -183,7 +183,7 @@ export default {
     addEventListeners() {
       for (const eventName of Object.keys(this.$listeners)) {
         this.calendarInstance.on(eventName, (...args) => this.$emit(eventName, ...args));
-      };
+      }
     },
     reflectSchedules() {
       if (this.schedules.length > 0) {

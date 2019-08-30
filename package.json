@@ -1,6 +1,6 @@
 {
   "name": "@toast-ui/vue-calendar",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "TOAST UI Calendar for Vue",
   "main": "dist/toastui-vue-calendar.js",
   "types": "index.d.ts",
@@ -14,7 +14,7 @@
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "serve": "vue serve ./example/App.vue",
-    "note": "tuie --tag=$(git describe --tags)"
+    "note": "tuie"
   },
   "repository": {
     "type": "git",

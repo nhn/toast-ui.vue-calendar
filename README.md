@@ -1,3 +1,9 @@
+# ⚠️ Notice: This repository is deprecated️️️️️
+
+TOAST UI Calendar for Vue has been managed separately from the TOAST UI Calendar repository. As a result of the distribution of these issues, we decided to deprecate each wrapper repository and manage repository as a [mono-repo](https://en.wikipedia.org/wiki/Monorepo) from the [TOAST UI Calendar repository](https://github.com/nhn/tui.calendar/tree/main/apps/vue-calendar).
+
+From now on, please submit issues or contributions related to TOAST UI Calendar for Vue to [TOAST UI Calendar repository](https://github.com/nhn/tui.calendar/tree/main/apps/vue-calendar). Thank you 🙂
+
 # TOAST UI Calendar for Vue
 
 > This is Vue component wrapping [TOAST UI Calendar](https://github.com/nhn/tui.calendar).

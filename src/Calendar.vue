@@ -182,7 +182,8 @@ export default {
     },
     addEventListeners() {
       for (const eventName of Object.keys(this.$listeners)) {
-        this.calendarInstance.on(eventName, (...args) => this.$emit(eventName, ...args));
+        const calendarEventName = eventName.replace(/-([a-z])/g, g => g[1].toUpperCase());
+        this.calendarInstance.on(calendarEventName, (...args) => this.$emit(eventName, ...args));
       }
     },
     reflectSchedules() {
